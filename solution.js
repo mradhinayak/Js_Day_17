@@ -18,7 +18,16 @@ printNumbersReverse(5)
 
 //  Find Factorial of a Number Using Recursion;
 function factorial(num) {
-    if (num <= 1) return 1;
+    if (num === 1) return 1;
     return num * factorial(num - 1);
 }
 console.log(factorial(5));
+
+
+// Find the Sum of First N Natural Numbers Using Recursion;
+function sum (num) {
+    if (num <= 0) throw new Error("Only natural numbers are supported");
+    if (num === 1) return 1;
+    return num + sum(num - 1);
+}
+console.log(sum(12));
