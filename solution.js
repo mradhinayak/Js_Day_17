@@ -31,3 +31,11 @@ function sum (num) {
     return num + sum(num - 1);
 }
 console.log(sum(12));
+
+
+// Calculate Power Using Recursion;
+function power(a, n) {
+    if (n === 0) return 1;
+    return a * power(a, n - 1);
+}
+console.log(power(5, 3));
